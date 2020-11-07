@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Card from './components/Card';
 import Nav from './components/Nav';
 import Home from './components/Home';
+import Details from './components/Details';
 
 
 // Media Items
@@ -17,8 +18,9 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <Route path="/Card" component={Card} />
         <Route path="/Home" component={Home} />
+        <Route path="/Card" exact component={Card} />
+        <Route path="/Card/:id" component={Details} />
    
 
       </div>
