@@ -1,12 +1,13 @@
 import React from 'react';
- function Header(){
+ 
+function Nav(){
      return(
-         <header>
+         <nav>
              <h1>
                  channel trial
              </h1>
-         </header>
-     )
+         </nav>
+     );
  }
 
 
@@ -15,4 +16,4 @@ import React from 'react';
 
 
 
- export default Header;
+ export default Nav;
