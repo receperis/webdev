@@ -11,7 +11,7 @@ function Details() {
     return (
         
             <ol>
-Details
+                <li>details</li>
             </ol>
     
     );

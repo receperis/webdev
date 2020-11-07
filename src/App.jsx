@@ -12,6 +12,7 @@ import Details from './components/Details';
 // Media Items
 import logo from './assets/logo.svg';
 import './style/App.css';
+import "./style/index.css";
 
 function App() {
   return (
