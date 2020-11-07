@@ -1,14 +1,16 @@
 import React from 'react';
- 
-function Nav(){
-     return(
-         <nav>
-             <h1>
-                 channel trial
-             </h1>
-         </nav>
-     );
- }
+
+function Nav() {
+    return (
+        <nav>
+            <h3>LOGO</h3>
+            <ul className="nav-bar">
+                <li>Home</li>
+                <li>Search</li>
+            </ul>
+        </nav>
+    );
+}
 
 
 
@@ -16,4 +18,4 @@ function Nav(){
 
 
 
- export default Nav;
+export default Nav;

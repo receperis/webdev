@@ -2,7 +2,28 @@
   text-align: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: grey;
+  color: white;
+  
+}
 
+.nav-bar {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+
+
+
+/*
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -20,3 +41,5 @@
     transform: rotate(360deg);
   }
 }
+
+*/
