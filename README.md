@@ -16,7 +16,7 @@ Package Tracking 1.0 is a simple web app for the customers that displays a list 
 - Visual Studio Code
 
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
