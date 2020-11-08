@@ -14,15 +14,17 @@ import logo from './assets/logo.svg';
 import './style/App.css';
 import "./style/index.css";
 
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Nav />
+        <Switch>
         <Route path="/Home" component={Home} />
         <Route path="/Card" exact component={Card} />
         <Route path="/Card/:id" component={Details} />
-   
+        </Switch>
 
       </div>
     </Router>

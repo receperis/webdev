@@ -1,19 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react';
 
 
-function Details() {
+function Details( {props} ) {
 
+const lista = props.map(item => {
+        return [<div>
+            {item.id},
+            {item.sender},
+            {item.status}
+            </div>];
 
-    const [items, setItems] = useState([]);
-
+    });
 
     return (
-        
-            <ol>
-                <li>details</li>
-            </ol>
-    
+
+        <ol>
+            <span>{lista}</span>
+
+        </ol>
+
     );
 }
 
