@@ -15,7 +15,7 @@ Package Tracking 1.0 is a simple web app for the customers that displays a list 
 - JSX
 - Visual Studio Code
 
-####Disclaimer:
+
 Some features may not be available for browsers older than Internet Explorer 9.
 
 
