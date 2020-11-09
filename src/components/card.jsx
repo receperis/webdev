@@ -8,31 +8,37 @@ function Card({ data }) {
 
 
 
-    const Card = data.map(item => {
-        return [
-        
-        <div key={item.id}>
-            
-            
-            <Link to={`/Card/${item.id}`}>
-            
-            <td>{item.id}</td> <td>{item.sender}</td>
+    const orderID = data.map(item => {
+        return (<div key={item.id}>
+                <Link to={`/Card/${item.id}`}>
+                {item.id}
+                </Link>
+                </div>);
+                 });
 
-            </Link>
+    const sender = data.map(item => {
+        return (<div key={item.id}>
+                
+                {item.sender}
+              
+                </div>
+        )});
 
-        </div>];
-
-    });
-
-    return (
+ 
+{/* <Link to={`/Card/${item.id}`}>
+            </Link> */}
+    
+            return (
 
 
         <div className="card">
 
-            Please select to view details
+            Please select ID to view order details
             <table className="short-card">
-            <tr><td>Order ID</td><td>Sender</td></tr>
-                {Card}
+            
+            <td>OrderID</td> <td>Sender</td>
+            <tr><td>{orderID}</td> <td>{sender}</td></tr>
+
             </table>
         </div>
 

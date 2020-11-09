@@ -34,7 +34,7 @@ function Details({ match, data }) {
         <table className="results">
 
             <tr> <td> Order ID   </td>      <td> {id} </td></tr>
-            <tr> <td> eta   </td>           <td> {eta} </td></tr>
+            <tr> <td> Est. Time of Arrival   </td>           <td> {eta} </td></tr>
             <tr> <td> Last updated </td>    <td> {last_updated}</td></tr>
             <tr> <td> Location Coordinate Latitude</td>  <td> {location_coordinate_latitude}</td></tr>
             <tr> <td> Location Coordinate Longitude</td> <td> {location_coordinate_longitude}</td></tr>
