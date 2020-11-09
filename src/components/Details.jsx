@@ -23,7 +23,7 @@ function Details({ match, data }) {
         user_name,
         user_phone,
       
-    } = state[0]; //filter returns only one array. So index is "0"
+    } = state[0]; //filter returns only one array. So index is "0".
 
 
 

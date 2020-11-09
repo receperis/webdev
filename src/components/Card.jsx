@@ -25,8 +25,6 @@ function Card({ data }) {
         )});
 
  
-{/* <Link to={`/Card/${item.id}`}>
-            </Link> */}
     
             return (
 
