@@ -3,32 +3,39 @@ import { Link } from 'react-router-dom';
 
 
 
-function Card({data}) {
-console.log(data);
+function Card({ data }) {
+    console.log(data);
 
 
 
-const Card = data.map(item => {
-    return [<li key={item.id}>
+    const Card = data.map(item => {
+        return [
+        
+        <div key={item.id}>
+            
+            
             <Link to={`/Card/${item.id}`}>
-             {item.id },  
-             {item.sender}
-             </Link>
-             </li>];
-          
-});
+            
+            <td>{item.id}</td> <td>{item.sender}</td>
 
+            </Link>
 
+        </div>];
 
-             
+    });
 
     return (
 
 
-<article>
-{Card}
-</article>
-            
+        <div className="card">
+
+            Please select to view details
+            <table className="short-card">
+            <tr><td>Order ID</td><td>Sender</td></tr>
+                {Card}
+            </table>
+        </div>
+
     );
 }
 

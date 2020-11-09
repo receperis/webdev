@@ -7,7 +7,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: grey;
+  background: rgb(220, 220, 1);
   color: white;
   
 }
@@ -18,28 +18,10 @@ nav {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  font-family: 'Goldman', cursive;
 }
 
 
 
 
-/*
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-*/

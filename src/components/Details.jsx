@@ -3,7 +3,7 @@ import React from 'react';
 
 function Details({ match, data }) {
 
-
+    //Filters the item of the whole array with the same ID
     const state = data.filter(item => {
         return (item.id === match.params.id);
     });
@@ -16,15 +16,14 @@ function Details({ match, data }) {
         location_coordinate_longitude,
         location_id,
         location_name,
-        location_status_ok,
         notes,
         parcel_id,
         sender,
         status,
         user_name,
         user_phone,
-        verification_required,
-    } = state[0];
+      
+    } = state[0]; //filter returns only one array. So index is "0"
 
 
 
@@ -32,20 +31,20 @@ function Details({ match, data }) {
 
     return (
 
-        <table>
+        <table className="results">
 
             <tr> <td> Order ID   </td>      <td> {id} </td></tr>
             <tr> <td> eta   </td>           <td> {eta} </td></tr>
-            <tr> <td> last updated </td>    <td> {last_updated}</td></tr>
+            <tr> <td> Last updated </td>    <td> {last_updated}</td></tr>
             <tr> <td> Location Coordinate Latitude</td>  <td> {location_coordinate_latitude}</td></tr>
-            <tr> <td> location_coordinate_longitude</td> <td> {location_coordinate_longitude}</td></tr>
-            <tr> <td> location_id </td>      <td> {location_id}</td></tr>
-            <tr> <td> location_name</td>     <td>{location_name}</td></tr>
-            <tr> <td> notes </td>            <td>{notes}</td></tr>
-            <tr> <td> parcel_id</td>         <td> {parcel_id}</td></tr>
-            <tr> <td> sender</td>            <td> {sender}</td></tr>
-            <tr> <td> status</td>            <td> {status}</td></tr>
-            <tr> <td> user_name </td>        <td> {user_name}</td></tr>
+            <tr> <td> Location Coordinate Longitude</td> <td> {location_coordinate_longitude}</td></tr>
+            <tr> <td> Location_id </td>      <td> {location_id}</td></tr>
+            <tr> <td> Location name</td>     <td>{location_name}</td></tr>
+            <tr> <td> Notes </td>            <td>{notes}</td></tr>
+            <tr> <td> Parcel ID</td>         <td> {parcel_id}</td></tr>
+            <tr> <td> Sender</td>            <td> {sender}</td></tr>
+            <tr> <td> Status</td>            <td> {status}</td></tr>
+            <tr> <td> User Name </td>        <td> {user_name}</td></tr>
             <tr> <td> user_phone</td>        <td>{user_phone}</td></tr>
            
 
