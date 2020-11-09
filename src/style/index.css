@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Noto+Sans+JP&display=swap');
+
+table  {
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    table-layout: unset;
+    
+  }
+
+  td{
+      border: 1px solid gray;
+      width: 20%
+  }
+
+
+.home-card{
+  font-family: 'Noto Sans JP', sans-serif;
+  max-width: 700px;
+  background-color: rgb(232, 232, 111);
+  margin-left: auto;
+  margin-right: auto;
+  margin: 45px;
+}
+
+.card{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 45px;
+    background-color: rgb(232, 232, 111);
+}
+
+.short-card{
+    margin-top: 45px;
+}
+
+.results {
+    margin-top: 45px;
+    font-family: 'Noto Sans JP', sans-serif;
+    max-width: 700px;
+}
+
+body{
+    background-color: rgb(232, 232, 111);
+}
