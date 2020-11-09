@@ -1,20 +1,58 @@
-import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState } from 'react';
 
 
-function Details() {
+function Details({ match, data }) {
 
 
-    const [items, setItems] = useState([]);
+    const state = data.filter(item => {
+        return (item.id === match.params.id);
+    });
+
+    const {
+        eta,
+        id,
+        last_updated,
+        location_coordinate_latitude,
+        location_coordinate_longitude,
+        location_id,
+        location_name,
+        location_status_ok,
+        notes,
+        parcel_id,
+        sender,
+        status,
+        user_name,
+        user_phone,
+        verification_required,
+    } = state[0];
+
+
+
 
 
     return (
-        
-            <ol>
-                <li>details</li>
-            </ol>
-    
-    );
+
+        <ol>
+            {id}
+            {eta}
+            {last_updated}
+            {location_coordinate_latitude}
+            {location_coordinate_longitude}
+            {location_id}
+            {location_name}
+            {location_status_ok}
+            {notes}
+            {parcel_id}
+            {sender}
+            {status}
+            {user_name}
+            {user_phone}
+            {verification_required}
+
+        </ol>
+    )
 }
+
+
 
 export default Details;
