@@ -10,7 +10,7 @@ import Details from './components/Details';
 
 
 // Media Items
-import logo from './assets/logo.svg';
+
 import './style/App.css';
 import "./style/index.css";
 
@@ -20,19 +20,19 @@ function App() {
 
   useEffect(() => {
     fetchItems();
-}, []);
+  }, []);
 
-const [items, setItems] = useState([]);
+  const [items, setItems] = useState([]);
 
-const fetchItems = async () => {
+  const fetchItems = async () => {
     const data = await fetch('https://my.api.mockaroo.com/orders.json?key=e49e6840');
 
     const items = await data.json();
-   
-    setItems(items);
-}
 
-const list = items;
+    setItems(items);
+  }
+
+  const list = items;
 
 
 
@@ -42,17 +42,18 @@ const list = items;
       <div className="App">
         <Nav />
         <Switch>
-        <Route path="/Home" component={Home} />
-        <Route path="/Card" exact render={() => <Card data = {list} />}/>
-        <Route path="/Card/:id" render={({match}) => <Details match={match} data = {list} />}/>
+          <Route path="/Home" component={Home} />
+          <Route path="/Card" exact render={() => <Card data={list} />} />
+          <Route path="/Card/:id"
+            render={({ match }) => <Details match={match} data={list} />} />
         </Switch>
 
       </div>
     </Router>
   );
-  
 
-  
+
+
 
 }
 
