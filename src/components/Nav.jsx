@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {FaDhl} from 'react-icons/fa';
 
 // Media Items
-import logo from '../assets/logo.svg';
+
 import '../style/App.css';
 import "../style/index.css";
 
