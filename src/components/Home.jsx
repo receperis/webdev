@@ -8,7 +8,7 @@ function Home() {
                 Our aim is to optimise and improve your supply chain, helping you gain a competitive advantage.
                 Here you can find the right solution, for your business.
             </p>
-            <i className="fab fa-dhl"></i>
+            {/* <i className="fab fa-dhl"></i> */}
         </article>
     );
 }

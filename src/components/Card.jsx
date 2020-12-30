@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 function Card({ data }) {
-    console.log(data);
-
-
 
     const orderID = data.map(item => {
         return (<div key={item.id}>
@@ -23,10 +20,6 @@ function Card({ data }) {
               
                 </div>
         )});
-
- 
-{/* <Link to={`/Card/${item.id}`}>
-            </Link> */}
     
             return (
 

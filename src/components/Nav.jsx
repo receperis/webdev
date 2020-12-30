@@ -13,11 +13,9 @@ function Nav() {
         <nav>
             
             <Link to={`/Home`}>
-            <h3><FaDhl size="7em"/></h3>
+            <FaDhl size="7em"/>
             </Link>
-         
-        
-            
+                
             <ul className="nav-bar">
                
                 <Link to={`/Home`}>

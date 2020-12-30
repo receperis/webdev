@@ -17,23 +17,21 @@ import "./style/index.css";
 
 function App() {
 
-
+  const [items, setItems] = useState([]);
+  
+  const fetchItems = async () => {
+    const data = await fetch('https://my.api.mockaroo.com/orders.json?key=e49e6840');
+    
+    const items = await data.json();
+    
+    setItems(items);
+  }
+  
   useEffect(() => {
     fetchItems();
   }, []);
-
-  const [items, setItems] = useState([]);
-
-  const fetchItems = async () => {
-    const data = await fetch('https://my.api.mockaroo.com/orders.json?key=e49e6840');
-
-    const items = await data.json();
-
-    setItems(items);
-  }
-
   const list = items;
-
+  
 
 
 
